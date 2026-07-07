@@ -2,41 +2,144 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>平行笔记隐私政策</title>
 
 <style>
+:root {
+    color-scheme: light;
+    --background: #F6F6F6;
+    --card-background: #FFFFFF;
+    --text-primary: #333333;
+    --text-secondary: #999999;
+    --separator: #EDEDED;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background: var(--background);
+}
+
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
-    line-height: 1.8;
-    padding: 24px;
-    color: #333;
+    margin: 0;
+    min-height: 100vh;
+    min-height: 100dvh;
+    background: var(--background);
+    color: var(--text-primary);
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+.page {
+    width: 100%;
+    min-height: 100vh;
+    min-height: 100dvh;
+    padding: calc(env(safe-area-inset-top) + 18px) 10px calc(env(safe-area-inset-bottom) + 34px);
+}
+
+.legal-card {
+    width: 100%;
     max-width: 720px;
-    margin: auto;
+    margin: 0 auto;
+    padding: 31px 22px 34px;
+    background: var(--card-background);
+    border-radius: 15px;
 }
 
 h1 {
-    font-size: 28px;
-    margin-bottom: 10px;
+    margin: 0;
+    color: var(--text-primary);
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.36;
+    letter-spacing: 0;
+    text-align: center;
+}
+
+.updated-at {
+    margin-top: 10px;
+    color: var(--text-secondary);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.5;
+    text-align: center;
 }
 
 h2 {
-    font-size: 20px;
-    margin-top: 30px;
+    margin: 31px 0 0;
+    padding-top: 23px;
+    border-top: 1px solid var(--separator);
+    color: var(--text-primary);
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.45;
+    letter-spacing: 0;
 }
 
 p {
+    margin: 13px 0 0;
+    color: #454545;
     font-size: 16px;
+    font-weight: 300;
+    line-height: 1.9;
+    letter-spacing: 0;
+}
+
+ul {
+    margin: 13px 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    position: relative;
+    margin: 9px 0 0;
+    padding-left: 16px;
+    color: #454545;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.75;
+}
+
+li::before {
+    content: "";
+    position: absolute;
+    left: 1px;
+    top: 0.78em;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #BBBBBB;
+}
+
+@media (max-width: 480px) {
+    .legal-card {
+        padding: 29px 18px 32px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 17px;
+    }
 }
 </style>
 
 </head>
 
 <body>
+<main class="page">
+<article class="legal-card">
 
 <h1>平行笔记隐私政策</h1>
 
-<p>
+<p class="updated-at">
 更新日期：2026年7月7日
 </p>
 
@@ -117,5 +220,7 @@ p {
 邮箱：rexlcy@me.com
 </p>
 
+</article>
+</main>
 </body>
 </html>
