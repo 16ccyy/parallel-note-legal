@@ -8,11 +8,10 @@
 <style>
 :root {
     color-scheme: light;
-    --background: #F6F6F6;
-    --card-background: #FFFFFF;
+    --background: #FFFFFF;
     --text-primary: #333333;
+    --text-body: #555555;
     --text-secondary: #999999;
-    --separator: #EDEDED;
 }
 
 * {
@@ -36,97 +35,95 @@ body {
 
 .page {
     width: 100%;
+    max-width: 720px;
     min-height: 100vh;
     min-height: 100dvh;
-    padding: calc(env(safe-area-inset-top) + 18px) 10px calc(env(safe-area-inset-bottom) + 34px);
-}
-
-.legal-card {
-    width: 100%;
-    max-width: 720px;
     margin: 0 auto;
-    padding: 31px 22px 34px;
-    background: var(--card-background);
-    border-radius: 15px;
+    padding: 34px 25px calc(env(safe-area-inset-bottom) + 42px);
 }
 
 h1 {
-    margin: 0;
+    margin: 0 0 72px;
     color: var(--text-primary);
-    font-size: 22px;
-    font-weight: 400;
-    line-height: 1.36;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.35;
     letter-spacing: 0;
     text-align: center;
 }
 
 .updated-at {
-    margin-top: 10px;
+    margin-top: -50px;
+    margin-bottom: 42px;
     color: var(--text-secondary);
     font-size: 14px;
     font-weight: 300;
-    line-height: 1.5;
+    line-height: 1.65;
     text-align: center;
 }
 
 h2 {
-    margin: 31px 0 0;
-    padding-top: 23px;
-    border-top: 1px solid var(--separator);
+    margin: 44px 0 0;
     color: var(--text-primary);
-    font-size: 17px;
-    font-weight: 400;
-    line-height: 1.45;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.55;
     letter-spacing: 0;
 }
 
 p {
-    margin: 13px 0 0;
-    color: #454545;
-    font-size: 16px;
+    margin: 28px 0 0;
+    color: var(--text-body);
+    font-size: 18px;
     font-weight: 300;
-    line-height: 1.9;
+    line-height: 2.05;
     letter-spacing: 0;
 }
 
 ul {
-    margin: 13px 0 0;
-    padding: 0;
+    margin: 18px 0 0;
+    padding: 0 0 0 4px;
     list-style: none;
 }
 
 li {
     position: relative;
-    margin: 9px 0 0;
-    padding-left: 16px;
-    color: #454545;
-    font-size: 16px;
+    margin: 8px 0 0;
+    padding-left: 22px;
+    color: var(--text-body);
+    font-size: 18px;
     font-weight: 300;
-    line-height: 1.75;
+    line-height: 1.85;
 }
 
 li::before {
     content: "";
     position: absolute;
-    left: 1px;
-    top: 0.78em;
+    left: 4px;
+    top: 0.86em;
     width: 4px;
     height: 4px;
     border-radius: 50%;
-    background: #BBBBBB;
+    background: var(--text-primary);
 }
 
 @media (max-width: 480px) {
-    .legal-card {
-        padding: 29px 18px 32px;
+    .page {
+        padding-right: 25px;
+        padding-left: 25px;
     }
 
     h1 {
-        font-size: 22px;
+        font-size: 24px;
     }
 
     h2 {
-        font-size: 17px;
+        font-size: 20px;
+    }
+
+    p,
+    li {
+        font-size: 18px;
     }
 }
 </style>
@@ -135,7 +132,6 @@ li::before {
 
 <body>
 <main class="page">
-<article class="legal-card">
 
 <h1>平行笔记隐私政策</h1>
 
@@ -220,7 +216,6 @@ li::before {
 邮箱：rexlcy@me.com
 </p>
 
-</article>
 </main>
 </body>
 </html>
