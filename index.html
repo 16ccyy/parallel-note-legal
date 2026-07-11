@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="description" content="ParallelNote 官方信息页面：技术支持、隐私政策与用户协议。">
+<meta property="og:title" content="ParallelNote">
+<meta property="og:description" content="ParallelNote 技术支持、隐私政策与用户协议">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://16ccyy.github.io/parallel-note-legal/">
+<title>ParallelNote</title>
+<style>
+:root { color-scheme: light; --background: #FFFFFF; --surface: #F7F7F7; --text-primary: #333333; --text-body: #454545; --text-secondary: #777777; --border: #E8E8E8; --link: #245A8D; }
+* { box-sizing: border-box; }
+html, body { background: var(--background); overflow-x: hidden; }
+body { margin: 0; min-height: 100vh; color: var(--text-primary); font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+a { color: var(--link); text-underline-offset: 3px; }
+a:focus-visible { outline: 2px solid var(--link); outline-offset: 4px; border-radius: 4px; }
+.page { width: 100%; max-width: 720px; min-height: 100vh; margin: 0 auto; padding: calc(env(safe-area-inset-top) + 56px) 25px calc(env(safe-area-inset-bottom) + 42px); }
+h1 { margin: 0; font-size: 26px; font-weight: 500; line-height: 1.4; text-align: center; }
+.intro { margin: 16px auto 0; max-width: 540px; color: var(--text-body); font-size: 16px; font-weight: 300; line-height: 1.9; text-align: center; }
+.links { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin-top: 46px; }
+.link-card { display: block; min-width: 0; padding: 22px 18px; border: 1px solid var(--border); border-radius: 14px; background: var(--surface); text-decoration: none; }
+.link-card strong { display: block; color: var(--text-primary); font-size: 16px; font-weight: 500; }
+.link-card span { display: block; margin-top: 8px; color: var(--text-secondary); font-size: 14px; font-weight: 300; line-height: 1.65; }
+.site-footer { margin-top: 54px; padding-top: 24px; border-top: 1px solid var(--border); color: var(--text-secondary); font-size: 13px; font-weight: 300; line-height: 1.8; text-align: center; }
+.site-footer p { margin: 4px 0 0; }
+.footer-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 18px; margin-top: 12px; }
+@media (max-width: 600px) { .links { grid-template-columns: 1fr; } }
+@media (max-width: 480px) { .page { padding-right: 22px; padding-left: 22px; } h1 { font-size: 24px; } }
+</style>
+</head>
+<body>
+<main class="page">
+    <h1>ParallelNote</h1>
+    <p class="intro">极简、轻量的纯文字时间线记事本。您可以在这里查看使用帮助、隐私政策和用户协议。</p>
+    <nav class="links" aria-label="主要页面">
+        <a class="link-card" href="support.html"><strong>技术支持</strong><span>使用帮助、iCloud 备份与常见问题</span></a>
+        <a class="link-card" href="privacy.html"><strong>隐私政策</strong><span>了解数据处理与隐私保护说明</span></a>
+        <a class="link-card" href="terms.html"><strong>用户协议</strong><span>查看使用 ParallelNote 的相关条款</span></a>
+    </nav>
+    <footer class="site-footer">
+        <p>ParallelNote · App 版本 1.0.0</p>
+        <p>© 2026 canyan lin</p>
+        <nav class="footer-links" aria-label="页脚导航">
+            <a href="index.html" aria-current="page">首页</a>
+            <a href="privacy.html">隐私政策</a>
+            <a href="terms.html">用户协议</a>
+            <a href="support.html">技术支持</a>
+        </nav>
+    </footer>
+</main>
+</body>
+</html>
